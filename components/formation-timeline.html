@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formation Timeline Demo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="../css/spaces.css">
+        <link rel="stylesheet" href="../css/grid-12col.css">
+        <link rel="stylesheet" href="../css/plantissima-styles.css">
+        <style>
+        .formation-timeline {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .formation-timeline > * {
+            grid-column: 1 / -1;
+        }
+
+        .formation-day {
+            display: flex;
+            gap: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            background: #fff;
+        }
+
+        .day-number {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            background: var(--brand-red);
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        .day-content {
+            flex-grow: 1;
+        }
+
+        .day-content h4 {
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+            color: var(--brand-red);
+            font-size: 1.25rem;
+        }
+
+        .day-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .detail {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+            color: #555;
+            padding: 0.25rem 0.5rem;
+            background: #f8f8f8;
+            border-radius: var(--border-radius);
+        }
+
+        .formation-follow-up {
+            grid-column: 1 / -1;
+            margin-top: 0.5rem;
+            font-style: normal;
+        }
+
+        @media (min-width: 768px) {
+            .formation-timeline > * {
+                grid-column: 2 / 12;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .formation-day {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1.25rem;
+            }
+            
+            .day-number {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 1rem;
+                font-size: 1.1rem;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section>
+                <div class="content-wrapper">
+                    <div class="formation-structure">
+                        <div class="formation-timeline">
+                            <div class="formation-intro">
+                                <h3>La Structure de la Formation à la MT</h3>
+                                <p>La formation se déroule en quatre sessions sur quatre jours consécutifs :</p>
+                            </div>
+                        
+                            <div class="formation-day">
+                                <div class="day-number">Jour 1</div>
+                                <div class="day-content">
+                                    <h4>Instruction personnalisée et première expérience</h4>
+                                    <div class="day-details">
+                                        <span class="detail"><i class="far fa-clock"></i> 90 minutes</span>
+                                        <span class="detail"><i class="far fa-star"></i> Accès direct à l'expérience transcendantale</span>
+                                    </div>
+                                    <p>Vous recevez votre mantra personnel et apprenez la technique de base, suivie de votre première expérience de méditation transcendantale.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="formation-day">
+                                <div class="day-number">Jour 2</div>
+                                <div class="day-content">
+                                    <h4>Vérification et approfondissement</h4>
+                                    <div class="day-details">
+                                        <span class="detail"><i class="far fa-clock"></i> 90 minutes</span>
+                                        <span class="detail"><i class="far fa-star"></i> Stabilisation de la pratique</span>
+                                    </div>
+                                    <p>Nous vérifions votre expérience initiale et affinons votre compréhension pour assurer une pratique correcte et sans effort.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="formation-day">
+                                <div class="day-number">Jour 3</div>
+                                <div class="day-content">
+                                    <h4>Compréhension du mécanisme et des bénéfices</h4>
+                                    <div class="day-details">
+                                        <span class="detail"><i class="far fa-clock"></i> 90 minutes</span>
+                                        <span class="detail"><i class="far fa-star"></i> Intégration des connaissances théoriques</span>
+                                    </div>
+                                    <p>Explorez les mécanismes qui permettent à la MT de produire ses effets profonds et comment ces bénéfices se développent avec le temps.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="formation-day">
+                                <div class="day-number">Jour 4</div>
+                                <div class="day-content">
+                                    <h4>Perspectives à long terme et intégration</h4>
+                                    <div class="day-details">
+                                        <span class="detail"><i class="far fa-clock"></i> 90 minutes</span>
+                                        <span class="detail"><i class="far fa-star"></i> Vision du développement de la conscience</span>
+                                    </div>
+                                    <p>Découvrez le plein potentiel de votre pratique à long terme et les étapes du développement de la conscience.</p>
+                                </div>
+                            </div>
+                        
+                            <p class="formation-follow-up">Après ces quatre jours, vous recevez un suivi personnalisé pendant six mois pour accompagner l'intégration optimale de la pratique dans votre vie quotidienne.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

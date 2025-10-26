@@ -1,0 +1,47 @@
+/* Spacing System */
+:root {
+  /* Core spacing unit */
+  --space-unit: 0.25rem;
+  
+  /* Spacing scale */
+  --space-2xs: calc(var(--space-unit) * 2);  /* 0.5rem */
+  --space-xs: calc(var(--space-unit) * 3);   /* 0.75rem */
+  --space-sm: calc(var(--space-unit) * 4);   /* 1rem */
+  --space-md: calc(var(--space-unit) * 6);   /* 1.5rem */
+  --space-lg: calc(var(--space-unit) * 8);   /* 2rem */
+  --space-xl: calc(var(--space-unit) * 12);  /* 3rem */
+  --space-2xl: calc(var(--space-unit) * 16); /* 4rem */
+  
+  /* Functional spacing */
+  --spacing-section: var(--space-2xl);
+  --spacing-content: var(--space-lg);
+  --spacing-element: var(--space-md);
+  --spacing-text: var(--space-sm);
+}
+
+/* Spacing Utility Classes */
+.space-xs { margin-bottom: var(--space-xs); }
+.space-sm { margin-bottom: var(--space-sm); }
+.space-md { margin-bottom: var(--space-md); }
+.space-lg { margin-bottom: var(--space-lg); }
+.space-xl { margin-bottom: var(--space-xl); }
+
+/* Section Spacing */
+.section {
+  padding: var(--spacing-section) 0;
+}
+
+/* Grid Gap */
+.grid {
+  gap: var(--spacing-grid);
+}
+
+/* Component Internal Spacing */
+.card {
+  padding: var(--spacing-card);
+}
+
+/* Text Spacing */
+.text-content > * + * {
+  margin-top: var(--spacing-text);
+}
