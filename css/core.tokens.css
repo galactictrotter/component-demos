@@ -1,0 +1,20 @@
+:root {
+    /* Brand Colors */
+    --brand-red: #CD5C5C;
+    --golden-yellow: #EDCB87;
+    --plantissima-green: #4F6052;
+    --off-white: #F7F0E9;
+    --main-bg-color: #FFFFFF;
+
+    /* Typography */
+    --font-primary: 'Playfair', Georgia, serif;
+    --font-secondary: 'Merriweather', Georgia, serif;
+    --font-tertiary: 'Roboto', sans-serif;
+
+    /* Spacing */
+    --section-spacing: clamp(3rem, 6vw, 5rem);
+    --content-padding: clamp(1.5rem, 4vw, 2rem);
+
+    /* Border */
+    --border-radius: 0.5rem;
+}

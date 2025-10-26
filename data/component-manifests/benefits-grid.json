@@ -1,0 +1,54 @@
+{
+  "$schema": "../schema/component-manifest.schema.json",
+  "component": "benefits-grid",
+  "description": "Four-up grid summarizing the scientifically validated benefits of Transcendental Meditation.",
+  "status": "prototype",
+  "data": {
+    "title": "Les Bienfaits Scientifiquement Prouvés de la MT",
+    "benefits": [
+      {
+        "icon": "fas fa-brain",
+        "title": "Fonction Cérébrale",
+        "bullets": [
+          "Cohérence alpha-1 des ondes cérébrales",
+          "Activation accrue du cortex préfrontal",
+          "Amélioration de 50% des performances cognitives"
+        ]
+      },
+      {
+        "icon": "fas fa-heart",
+        "title": "Santé Cardiovasculaire",
+        "bullets": [
+          "Réduction de 48% des facteurs de risque",
+          "Amélioration de la variabilité cardiaque",
+          "Normalisation de la pression artérielle"
+        ]
+      },
+      {
+        "icon": "fas fa-wind",
+        "title": "Équilibre Émotionnel",
+        "bullets": [
+          "Réduction de 67% de l'anxiété de trait",
+          "Diminution de 27% du cortisol (stress)",
+          "Amélioration significative de la résilience"
+        ]
+      },
+      {
+        "icon": "fas fa-bed",
+        "title": "Vitalité & Régénération",
+        "bullets": [
+          "Amélioration de 42% de la qualité du sommeil",
+          "Âge biologique réduit de 12 ans en moyenne",
+          "Augmentation mesurable de l'énergie"
+        ]
+      }
+    ],
+    "researchNote": "Ces résultats sont validés par plus de 380 études scientifiques publiées dans des revues à comité de lecture."
+  },
+  "assets": [],
+  "actions": [],
+  "tags": ["benefits", "grid"],
+  "notes": [
+    "Icons currently rely on Font Awesome CDN; consider bundling locally for offline builds."
+  ]
+}

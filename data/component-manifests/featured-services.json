@@ -1,0 +1,41 @@
+{
+  "$schema": "../schema/component-manifest.schema.json",
+  "component": "featured-services",
+  "description": "Two-column grid highlighting the four core Plantissima service pillars.",
+  "status": "prototype",
+  "data": {
+    "heading": "Traitements ayurvédiques à Paris",
+    "cards": [
+      {
+        "category": "Consultations",
+        "title": "Lecture du pouls ayurvédique",
+        "href": "#",
+        "copy": "Embrassez un voyage de découverte intérieure avec nos consultations ayurvédiques. Grâce à un bilan approfondi, la lecture de votre pouls (Nadi Vigyan) et un suivi personnalisé sur 3 mois, nous vous aiderons à découvrir les clés de votre harmonie intérieure avec un accompagnement attentif et personnalisé vers un équilibre durable et une vitalité rayonnante."
+      },
+      {
+        "category": "Soins",
+        "title": "Sukshma Marma — notre signature ayurvédique",
+        "href": "#",
+        "copy": "Offrez-vous bien plus qu’un massage traditionnel. Sukshma Marma, un soin personalisé subtil et précieux éveille et canalise l’énergie vitale de votre corps. Hérité de maîtres ayurvédiques à travers les âges, ce joyau secret au cœur de l’Ayurveda invite à un raffinement profond et à une transformation intérieure durable."
+      },
+      {
+        "category": "Métabolisme",
+        "title": "Métabolisme et feu digestif",
+        "href": "#",
+        "copy": "Saviez-vous que votre système digestif héberge un véritable « second cerveau » capable d’influencer profondément nos émotions et notre énergie ? Établissez une communication harmonieuse corps-esprit grâce à notre programme ayurvédique personalisé pour un feu digestif efficace et une vitalité durable."
+      },
+      {
+        "category": "Méditation",
+        "title": "Initiation à la Méditation Transcendantale",
+        "href": "#",
+        "copy": "Cette méditation est unique et apporte des bienfaits exceptionnels. Elle allie un état de repos profond et régénérateur à une vigilance mentale affinée. Ne requiert ni concentration ni contrôle de l'esprit. Réduit le stress, développe le potentiel créatif et cognitif. Plus de 600 études documentent ses bienfaits."
+      }
+    ]
+  },
+  "assets": [],
+  "actions": [],
+  "tags": ["homepage", "services", "grid"],
+  "notes": [
+    "Inline emphasis links (`<a>`) should map to Hugo shortcodes or markdown once migrated."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "component-demos",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "lint:manifests": "ajv validate -s data/schema/component-manifest.schema.json -d \"data/component-manifests/*.json\"",
+    "test:visual": "playwright test",
+    "test:components": "npm run lint:manifests && npm run test:visual"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.1",
+    "ajv-cli": "^5.0.0",
+    "axe-playwright": "^2.1.0"
+  }
+}

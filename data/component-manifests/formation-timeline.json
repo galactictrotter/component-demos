@@ -1,0 +1,55 @@
+{
+  "$schema": "../schema/component-manifest.schema.json",
+  "component": "formation-timeline",
+  "description": "Four-day training timeline with duration badges and follow-up summary.",
+  "status": "prototype",
+  "data": {
+    "title": "La Structure de la Formation à la MT",
+    "intro": "La formation se déroule en quatre sessions sur quatre jours consécutifs :",
+    "days": [
+      {
+        "label": "Jour 1",
+        "title": "Instruction personnalisée et première expérience",
+        "details": [
+          "90 minutes",
+          "Accès direct à l'expérience transcendantale"
+        ],
+        "copy": "Vous recevez votre mantra personnel et apprenez la technique de base, suivie de votre première expérience de méditation transcendantale."
+      },
+      {
+        "label": "Jour 2",
+        "title": "Vérification et approfondissement",
+        "details": [
+          "90 minutes",
+          "Stabilisation de la pratique"
+        ],
+        "copy": "Nous vérifions votre expérience initiale et affinons votre compréhension pour assurer une pratique correcte et sans effort."
+      },
+      {
+        "label": "Jour 3",
+        "title": "Compréhension du mécanisme et des bénéfices",
+        "details": [
+          "90 minutes",
+          "Intégration des connaissances théoriques"
+        ],
+        "copy": "Explorez les mécanismes qui permettent à la MT de produire ses effets profonds et comment ces bénéfices se développent avec le temps."
+      },
+      {
+        "label": "Jour 4",
+        "title": "Perspectives à long terme et intégration",
+        "details": [
+          "90 minutes",
+          "Vision du développement de la conscience"
+        ],
+        "copy": "Découvrez le plein potentiel de votre pratique à long terme et les étapes du développement de la conscience."
+      }
+    ],
+    "followUp": "Après ces quatre jours, vous recevez un suivi personnalisé pendant six mois pour accompagner l'intégration optimale de la pratique dans votre vie quotidienne."
+  },
+  "assets": [],
+  "actions": [],
+  "tags": ["timeline", "training"],
+  "notes": [
+    "Each detail entry renders with an icon in the static demo; replace icons with semantic labels or inline SVGs in Hugo."
+  ]
+}

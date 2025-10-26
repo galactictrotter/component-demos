@@ -1,0 +1,64 @@
+{
+  "$schema": "../schema/component-manifest.schema.json",
+  "component": "homepage-hero",
+  "description": "Hero section with fixed navigation, full-bleed image, contact summary, and dual CTA buttons.",
+  "status": "prototype",
+  "data": {
+    "navigation": {
+      "logo": {
+        "src": "../images/logo-negativo.png",
+        "alt": "Plantissima Logo"
+      },
+      "links": [
+        { "label": "ACCUEIL", "href": "#" },
+        { "label": "MÉDITATION", "href": "#" },
+        { "label": "WEBINAIRES", "href": "#" }
+      ]
+    },
+    "hero": {
+      "image": {
+        "src": "../images/Ayurveda-Aromaterapia-153.jpg",
+        "alt": "Ayurveda treatment"
+      },
+      "headline": "Éveillez votre potentiel intérieur au cœur de Paris"
+    },
+    "header": {
+      "title": [
+        "Ayurveda, Aromathérapie et Méditation Transcendantale",
+        "— Paris Luxembourg"
+      ],
+      "subtitle": "Maison d'Ayurveda pour l'art du mieux-être",
+      "contact": {
+        "location": "3 Rue Auguste Comte, Paris 75006",
+        "phone": "+33 6 03 15 13 90"
+      }
+    },
+    "buttons": [
+      { "label": "Prendre RDV", "href": "#", "variant": "primary" },
+      { "label": "Nous contacter", "href": "#", "variant": "secondary" }
+    ]
+  },
+  "assets": [
+    {
+      "key": "logo",
+      "path": "../images/logo-negativo.png",
+      "type": "image/png",
+      "usage": "Navigation logo"
+    },
+    {
+      "key": "hero-image",
+      "path": "../images/Ayurveda-Aromaterapia-153.jpg",
+      "type": "image/jpeg",
+      "usage": "Hero background image"
+    }
+  ],
+  "actions": [
+    { "key": "primary", "label": "Prendre RDV", "href": "#" },
+    { "key": "secondary", "label": "Nous contacter", "href": "#" }
+  ],
+  "tags": ["homepage", "hero", "navigation"],
+  "notes": [
+    "Navigation toggle relies on js/navigation.js for menu state.",
+    "Hero text overlay expects darkened image for sufficient contrast."
+  ]
+}

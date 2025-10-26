@@ -1,0 +1,15 @@
+{
+  "$schema": "../schema/component-manifest.schema.json",
+  "component": "site-footer",
+  "description": "Compact footer line reinforcing brand heritage.",
+  "status": "prototype",
+  "data": {
+    "copy": "Plantissima, Maison d'Ayurveda créée en 2014."
+  },
+  "assets": [],
+  "actions": [],
+  "tags": ["footer"],
+  "notes": [
+    "Copy terminates with a decorative golden-yellow span; expose this tokenized treatment in Hugo."
+  ]
+}
